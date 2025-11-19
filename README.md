@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💬 Connectio - Modern Chat Application
 
-## Getting Started
+A full-stack real-time chat application built with Next.js, featuring user authentication, friend management, and modern UI design.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-16.0.1-black)
+![React](https://img.shields.io/badge/React-19.2.0-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)
+![Prisma](https://img.shields.io/badge/Prisma-6.19.0-purple)
 
+## 🌟 Features
+
+### ✅ **Currently Available**
+- 🔐 **User Authentication** - Secure registration and login system
+- 👤 **Profile Management** - Customizable user profiles with avatar uploads
+- 👥 **Friend System** - Send, receive, and manage friend requests
+- 🔍 **User Search** - Find and connect with other users
+- 🎨 **Modern UI** - Dark theme with smooth animations and responsive design
+- 📱 **Mobile Friendly** - Fully responsive across all devices
+
+### 🚧 **Coming Soon**
+- 💬 Real-time messaging
+- 🏠 Chat rooms and group conversations
+- 🔔 Push notifications
+- 📞 Voice/video calling
+
+## 🏗️ **Tech Stack**
+
+**Frontend**: Next.js 16, React 19, TypeScript, Tailwind CSS, Framer Motion
+**Backend**: Next.js API Routes, PostgreSQL, Prisma ORM
+**Authentication**: JWT with secure password hashing
+**Deployment**: Vercel-ready
+
+## 🚀 **Getting Started**
+
+### Prerequisites
+- Node.js 18+
+- PostgreSQL database
+
+### Installation
 ```bash
+# Clone the repository
+git clone https://github.com/Nitindeep65/connect.io.git
+cd connectio
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env.local
+# Edit .env.local with your database URL and JWT secret
+
+# Set up database
+npx prisma generate
+npx prisma db push
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📱 **How to Use**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Sign Up** - Create your account with email and username
+2. **Set Up Profile** - Add your name and profile picture
+3. **Find Friends** - Search for users and send friend requests
+4. **Manage Connections** - Accept or decline friend requests
+5. **Start Chatting** - Connect with your friends (messaging coming soon!)
 
-## Learn More
+## 🎨 **Design**
 
-To learn more about Next.js, take a look at the following resources:
+Connectio features a modern, professional design with:
+- **Dark theme** with gradient accents
+- **Glass morphism** effects
+- **Smooth animations** and transitions
+- **Accessible** components and navigation
+- **Mobile-first** responsive design
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 👤 **Author**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Nitindeep Singh**
+- GitHub: [@Nitindeep65](https://github.com/Nitindeep65)
+- Project: [connect.io](https://github.com/Nitindeep65/connect.io)
 
-## Deploy on Vercel
+## 📄 **License**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MIT License - feel free to use this project for learning and development.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+⭐ **Star this repository if you find it helpful!**
